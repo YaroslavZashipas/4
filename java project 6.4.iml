@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-</module>
+public class Main {
+    public static void main(String[] args) {
+        int count = 0;
+
+        for (int i = 0; i <= 90; i++) {
+            System.out.printf("%.2f ", Math.sin(Math.toRadians(i)));
+            count++;
+
+            if (count == 10) {
+                System.out.println();
+                count = 0;
+            }
+        }
+    }
+}
